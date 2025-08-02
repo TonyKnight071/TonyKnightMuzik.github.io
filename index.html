@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonyknightmuzik Entertainment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        header {
+            background: url('https://via.placeholder.com/1920x1080?text=Promo+Image') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            font-size: 3.5em;
+            text-transform: uppercase;
+            color: #ff0000;
+            z-index: 1;
+            text-shadow: 2px 2px 4px #000;
+        }
+        header p {
+            font-size: 1.2em;
+            max-width: 600px;
+            z-index: 1;
+        }
+        nav {
+            background-color: #000;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #ff0000;
+        }
+        .container {
+            width: 80%;
+            margin: 2em auto;
+        }
+        .music-section h2, .merch-section h2, .about-section h2, .contact-section h2 {
+            color: #ff0000;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .music-grid, .merch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+        }
+        .music-card a, .merch-card a {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .music-card a:hover, .merch-card a:hover {
+            text-decoration: underline;
+        }
+        .merch-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .about-section p {
+            max-width: 700px;
+            margin: 1em auto;
+            line-height: 1.6;
+        }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact-section input, .contact-section textarea {
+            padding: 0.8em;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        .contact-section button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-section button:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+        footer a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tonyknightmuzik Entertainment</h1>
+        <p>Independent Native American artist from Arizona, blending hip-hop, rap, country, and backroad vibes from the reservation roads.</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#music">Music</a>
+        <a href="#merch">Merch</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="music-section" id="music">
+            <h2>Listen Now</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <h3>Can't Escape</h3>
+                    <p><a href="https://music.apple.com/us/song/cant-escape/1707781717" target="_blank">Stream on Apple Music</a></p>
+                    <p><a href="https://m.soundcloud.com/tonyknightmuzik/tonyknight-muzik-cant-escape" target="_blank">Stream on SoundCloud</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="merch-section" id="merch">
+            <h2>Merchandise</h2>
+            <div class="merch-grid">
+                <div class="merch-card">
+                    <img src="https://via.placeholder.com/250x350?text=100+Proof+Hoodie" alt="100 Proof Hoodie">
+                    <p><a href="mailto:tonyknight071@gmail.com?subject=Merch%20Inquiry">Get Your Hoodie</a></p>
+                </div>
+                <div class="merch-card">
+                    <img src="https://via.placeholder.com/250x350?text=Tonyknight+Hoodie" alt="Tonyknight Hoodie">
+                    <p><a href="mailto:tonyknight071@gmail.com?subject=Merch%20Inquiry">Get Your Hoodie</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <h2>About Tonyknightmuzik</h2>
+            <p>I'm a Native American from Arizona, way outback on them reservation roads. As an independent artist, I'm making my way through, blending hip-hop, rap, country, and backroad vibes. My music and merch tell the story of life, struggle, and triumph from the desert.</p>
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>Contact</h2>
+            <p>For booking info: <a href="mailto:tonyknight071@gmail.com">tonyknight071@gmail.com</a></p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Tonyknightmuzik Entertainment. All rights reserved. | 
+        <a href="https://m.soundcloud.com/tonyknightmuzik" target="_blank">SoundCloud</a> | 
+        <a href="https://music.apple.com/us/artist/tonyknightmuzik/1707781716" target="_blank">Apple Music</a></p>
+    </footer>
+</body>
+</html>
