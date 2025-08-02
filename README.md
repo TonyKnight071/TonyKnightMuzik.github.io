@@ -65,3 +65,4 @@
   <h2>🛍️ Merch (Coming Soon)</h2>
   <p>Stay tuned for official TonyKnightMuzik gear!</p>
 </body># TonyKnightMuzik.github.io
+<a href="merch.html" style="color: gold;">🛍️ Visit My Merch Page</a>
